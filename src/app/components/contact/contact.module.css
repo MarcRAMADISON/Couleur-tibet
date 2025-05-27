@@ -1,0 +1,40 @@
+.container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100vw;
+    min-height:600px;
+    background-color: #000;
+    padding-top: 50px;
+}
+.day{
+    color:#fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.hour{
+    color:#fff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-left: 80px;
+}
+.title{
+    color:#fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.block1{
+    width:45%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    place-self: center;
+}
+.localisation{
+    color:#fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+}

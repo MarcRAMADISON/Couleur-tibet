@@ -1,0 +1,71 @@
+.numberSelect{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap:15px
+}
+.number{
+    border:1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width:40px;
+    height:40px
+}
+.labeSelect{
+    color:#808080;
+    font-size: 0.9rem;
+    margin: 20px 0px 10px 0px;
+}
+.nextStepButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color:#fff;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 30px auto auto auto;
+    place-self: center;
+}
+.titleCard{
+    font-size: 1.5rem;
+    color:#03bd64;
+    margin: 10px auto 30px auto;
+    place-self: center;
+    text-transform: uppercase;
+    place-self: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 30px;
+}
+.buttonContainer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width:100%
+}
+.validerButton{
+    background-color: #000;
+    color:#fff;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.backButton{
+    color:#000;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.recapText{
+    color:#808080;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}

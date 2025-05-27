@@ -1,0 +1,147 @@
+.titleCard{
+    font-size: 1.5rem;
+    color:#03bd64;
+    margin: 10px 0px 30px 0px;
+    place-self: center;
+}
+.container {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 1rem;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #dbdbdb;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #555;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  .name{
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  .nextBouton{
+    background-color: #000;
+    color:#fff;
+    font-size: 1rem;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .bookBouton{
+    color:#000;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  
+.valueControl {
+  width: var(--control-size);
+  height: var(--control-size);
+  margin: 0 8px;
+  background: transparent;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  color: #3b3b3b;
+  cursor: pointer;
+  font-size: var(--font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.valueControl:hover {
+  background: #eee;
+}
+
+.valueControl:active {
+  background: #ddd;
+}
+
+.valueControl:focus,
+.valueInput:focus {
+  outline: 2px solid #3e67fd;
+  outline-offset: 1px
+}
+
+.valueInput {
+  margin: 0;
+  height: var(--control-size);
+  width: 80px;
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 2px 8px;
+  text-align: center;
+  font-size: var(--font-size);
+}
+
+.valueInput:hover {
+  border-color: #777;
+}
+
+.valueInput::-webkit-outer-spin-button,
+.valueInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.valueInput {
+  -moz-appearance: textfield;
+}
+
+

@@ -1,0 +1,76 @@
+.container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100vw;
+    height:100%;
+    min-height:800px;
+    padding: 100px 0px;
+
+}
+.title{
+    color:#03bd64;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.cardContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    width:70%;
+    max-width: 1080px;
+    margin-top: 80px;
+}
+.button{
+    color:#fff;
+    background-color: #000;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    margin-top: 80px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor:pointer
+}
+.titleCard{
+    font-size: 1.5rem;
+    color:#03bd64;
+    margin: 30px 0px 30px 0px;
+    place-self: center;
+}
+
+.cardItem{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width:100%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+.name{
+    color:#000;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: auto;
+    place-self: start;
+    width:100%
+}
+.price{
+    color:#000;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: right;
+    width:100%
+}
+.description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.addBasket{
+    color:#000;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: right;
+    width:100%;
+    cursor: pointer;
+    margin-top: 5px;
+}
