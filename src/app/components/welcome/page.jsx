@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Welcome() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="welcome">
       <div className={styles.textContainer}>
         <div className={styles.logo}>
           <Image

@@ -9,7 +9,7 @@ const Map = dynamic(() => import("../map/page"), { ssr: false });
 
 function Contact() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id='contact'>
       <Map />
       <div className={style.block1}>
         <h1 className={style.title}>Heures d'ouverture</h1>

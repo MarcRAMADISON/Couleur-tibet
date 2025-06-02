@@ -3,7 +3,7 @@ import style from "./presentation.module.css";
 
 function Presentation() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="presentation">
       <div className={style.imageContainer}>
         <Image
           src="/assets/tibet_presentation.png"

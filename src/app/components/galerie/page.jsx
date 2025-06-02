@@ -5,7 +5,7 @@ import { galeries } from "@/app/utils";
 
 function Galerie() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="galerie">
       <h3 className={style.title}>GALERIE</h3>
       <div style={{width:"80%",maxWidth:"2080px",marginTop:"80px"}}>
       

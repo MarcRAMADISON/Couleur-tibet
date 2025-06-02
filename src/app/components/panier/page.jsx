@@ -169,7 +169,7 @@ function Panier({ open, setOpen, data, setData }) {
         >
           Votre panier est vide
         </div>
-      )} </> : <Commande handleBack={()=>setOpenCommande(false)}/>
+      )} </> : <Commande handleBack={()=>setOpenCommande(false)} setOpen={setOpen}/>
     }
     </Modal>
   );

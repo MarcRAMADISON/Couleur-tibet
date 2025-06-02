@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function FloatingLabelInput({ id, placeholder, type = "text" }) {
-  const [value, setValue] = useState("");
+export default function FloatingLabelInput({ id, placeholder, type = "text",value,handleChange, name }) {
+
 
   return (
     <>
@@ -10,9 +10,10 @@ export default function FloatingLabelInput({ id, placeholder, type = "text" }) {
           id={id}
           type={type}
           value={value}
-          onChange={(e) => setValue(e.target.value)}
+          onChange={handleChange}
           placeholder=" " 
           autoComplete="off"
+          name={name}
         />
         <label htmlFor={id}>{placeholder}</label>
       </div>

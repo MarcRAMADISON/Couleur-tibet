@@ -25,6 +25,14 @@
     font-size: 0.9rem;
     cursor: pointer;
 }
+.disabledButton{
+    background-color: #808080;
+    color:#fff;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
 .backButton{
     color:#000;
     font-size: 0.9rem;

@@ -19,7 +19,7 @@ function Carte({ setPaniers, paniers }) {
   };
 
   return (
-    <div className={style.container}>
+    <div className={style.container} id="carte">
       <h3 className={style.title}>Notre carte</h3>
       <div className={style.cardContainer}>
         {carteData.slice(0, currentPagination).map((d, index) => {

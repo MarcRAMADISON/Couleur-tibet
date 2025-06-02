@@ -10,7 +10,20 @@
     align-items: center;
     border-radius: 10px;
     width:40px;
-    height:40px
+    height:40px;
+    cursor:pointer;
+}
+.selectedNumber{
+    border:1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    width:40px;
+    height:40px;
+    cursor:pointer;
+    color:#fff;
+    background-color: #000;
 }
 .labeSelect{
     color:#808080;
@@ -30,6 +43,22 @@
     max-width: 200px;
     margin: 30px auto auto auto;
     place-self: center;
+    border:none
+}
+.desabledNextButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+    color:#fff;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    max-width: 200px;
+    margin: 30px auto auto auto;
+    place-self: center;
+    border:none
 }
 .titleCard{
     font-size: 1.5rem;
@@ -68,4 +97,12 @@
     color:#808080;
     font-size: 0.9rem;
     margin-top: 40px;
+}
+.desabledButton{
+    background-color: #808080;
+    color:#fff;
+    padding: 13px 25px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
 }

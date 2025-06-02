@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-export default function DateTimePicker({placeholder}) {
-  const [dateTime, setDateTime] = useState("");
+export default function DateTimePicker({placeholder,dateTime,setDateTime}) {
+  
 
   const handleChange = (e) => {
     setDateTime(e.target.value);

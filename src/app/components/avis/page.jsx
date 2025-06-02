@@ -4,7 +4,7 @@ import AvisComponent from "../avisComponent/page";
 
 function Avis() {
   return (
-    <div className={style.container}>
+    <div className={style.container} id="avis">
       <h3 className={style.title}>AVIS DE NOS CLIENTS</h3>
       <div className={style.avisContainer}>
             {

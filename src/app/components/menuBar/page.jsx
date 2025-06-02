@@ -5,13 +5,19 @@ import Reservation from "../reservation/page";
 
 function MenuBar({ setShowBasket, paniers }) {
   const [openReservation,setOpenReservation]=useState(false)
+  const handleNavigation=(id)=>{
+    const element= document.getElementById(id)
+    element.scrollIntoView({behavior:"smooth"})
+  }
 
   return (
     <>
       <div className={style.container}>
-        <h1 className={style.item}>A propos</h1>
-        <h1 className={style.item}>Carte</h1>
-        <h1 className={style.item}>Galerie</h1>
+        <h1 className={style.item} onClick={()=>handleNavigation("presentation")}>A propos</h1>
+        <h1 className={style.item} onClick={()=>handleNavigation("carte")}>Carte</h1>
+        <h1 className={style.item} onClick={()=>handleNavigation("galerie")}>Galerie</h1>
+        <h1 className={style.item} onClick={()=>handleNavigation("avis")}>Avis</h1>
+        <h1 className={style.item} onClick={()=>handleNavigation("contact")}>Contact</h1>
         <h1 className={style.button} onClick={() => setShowBasket(true)}>Commander</h1>
         <h1 className={style.button} onClick={()=>setOpenReservation(true)}>Réserver</h1>
       </div>
