@@ -22,3 +22,24 @@
     font-weight: 400;
     line-height: 35px;
 }
+
+@media (max-width:1336px){
+    .text{
+        width:80%;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:920px){
+    .container{
+        grid-template-columns: 100%;
+    }
+    .imageContainer{
+        height:320px;
+    }
+    .text{
+        font-size: 1rem;
+        width:90%;
+        margin:30px 0px;
+    }
+}

@@ -20,3 +20,19 @@
     max-width: 1080px;
     margin-top: 100px;
 }
+
+@media (max-width:1336px){
+    .title{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:920px){
+    .avisContainer{
+        grid-template-columns: 100%;
+    }
+    .title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+}

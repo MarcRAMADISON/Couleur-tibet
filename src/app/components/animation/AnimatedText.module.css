@@ -1,0 +1,44 @@
+
+.fadeInUp {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  .fadeInUp.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fadeInDown {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+  }
+  
+  .fadeInDown.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .fadeInRight {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeInRight.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .fadeInLeft {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .fadeInLeft.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import style from "./presentation.module.css";
+import Animation from "../animation/page";
 
 function Presentation() {
   return (
@@ -13,7 +14,7 @@ function Presentation() {
           objectPosition="100% 0%"
         />
       </div>
-      <div className={style.textContainer}>
+      <Animation className={style.textContainer} animation="fadeInLeft">
         <h3 className={style.text}>
           Couleur Tibet est un restaurant Tibétain situe en plein cœur de
           Bordeaux entre le quartier Saint-Michel et quartier Victoire. En plus
@@ -26,7 +27,7 @@ function Presentation() {
           Venez nous rejoindre et laissez-vous transporter dans un monde de
           délices culinaires et d'hospitalité tibétaine authentique.
         </h3>
-      </div>
+      </Animation>
     </div>
   );
 }

@@ -144,4 +144,17 @@
   -moz-appearance: textfield;
 }
 
+.row{
+  margin-right: 50px;
+}
+
+@media (max-width:440px){
+  .row{
+    margin-right: 0px;
+  }
+  .valueInput {
+    width: 50px;
+  }
+}
+
 

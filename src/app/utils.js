@@ -93,7 +93,7 @@ export const menuList=[
       },
       {
         name:"Soupe de farine d'orge grillée avec gingembre",
-        price:7.00,
+        price:5.00,
         description:"Soupe de farine d'orge grillée avec gingembre"
       },
       {
@@ -103,7 +103,67 @@ export const menuList=[
       },
       {
         name:'Salade crevettes',
+        price:8.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:"Soupe de farine d'orge grillée avec gingembre, Poulet ou Bœuf",
+        price:11.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      }
+    ]
+  },
+  {
+    name:'PLATS',
+    menus:[
+      {
+        name:'Tsam Thuk',
+        price:2.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:"Soupe de farine d'orge grillée avec gingembre",
+        price:5.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:'Salade Poulet',
         price:7.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:'Salade crevettes',
+        price:10.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:"Soupe de farine d'orge grillée avec gingembre, Poulet ou Bœuf",
+        price:7.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      }
+    ]
+  },
+  {
+    name:'ACCOMPAGNEMENTS',
+    menus:[
+      {
+        name:'Tsam Thuk',
+        price:7.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:"Soupe de farine d'orge grillée avec gingembre",
+        price:7.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:'Salade Poulet',
+        price:8.00,
+        description:"Soupe de farine d'orge grillée avec gingembre"
+      },
+      {
+        name:'Salade crevettes',
+        price:4.00,
         description:"Soupe de farine d'orge grillée avec gingembre"
       },
       {
@@ -114,3 +174,8 @@ export const menuList=[
     ]
   }
 ]
+
+export const handleNavigation = (id) => {
+  const element = document.getElementById(id);
+  element.scrollIntoView({ behavior: "smooth" });
+};

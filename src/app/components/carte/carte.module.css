@@ -66,11 +66,48 @@
     margin-top: 5px;
 }
 .addBasket{
-    color:#000;
+    color:#03bd64;
     font-size: 0.9rem;
     font-weight: bold;
     text-align: right;
     width:100%;
     cursor: pointer;
     margin-top: 5px;
+}
+
+@media (max-width:1336px){
+    .title{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:920px){
+    .cardContainer{
+        grid-template-columns: repeat(2,1fr);
+        margin: 80px auto;
+        place-self: center;
+    }
+    .title{
+        font-size: 3rem;
+    }
+    .titleCard{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:640px){
+    .cardContainer{
+        grid-template-columns: 100%;
+        margin: 80px auto;
+        place-self: center;
+    }
+    .title{
+        font-size: 2.5rem;
+    }
+    .titleCard{
+        font-size: 1.1rem;
+    }
+    .button{
+        margin-top: 40px;
+    }
 }

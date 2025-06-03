@@ -24,8 +24,7 @@
     margin-bottom: 30px;
 }
 .block1{
-    width:45%;
-    min-width: 300px;
+    width:auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,4 +36,34 @@
     color:#fff;
     font-size: 1.1rem;
     font-weight: bold;
+}
+
+
+@media (max-width:920px){
+    .container{
+        grid-template-columns: 100%
+    }
+    .block1{
+        margin: 50px auto;
+        width:90%;
+        max-width: 400px;
+    }
+    .hour{
+        text-align: left;
+    }
+    
+    .day{
+        text-align: left;
+    }
+}
+
+@media (max-width:420px){
+    
+    .hour{
+        margin-left: 30px;
+        text-align: left;
+    }
+    .day{
+        text-align: left;
+    }
 }

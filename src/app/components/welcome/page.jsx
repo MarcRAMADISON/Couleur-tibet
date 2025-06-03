@@ -1,5 +1,6 @@
 import styles from "./welcome.module.css";
 import Image from "next/image";
+import Animation from "../animation/page";
 
 function Welcome() {
   return (
@@ -15,8 +16,8 @@ function Welcome() {
           />
         </div>
 
-        <h1 className={styles.title}>RESTAURANT TIBÉTAIN</h1>
-        <div style={{ display: "flex",margin:"70px 0px" }}>
+        <Animation className={styles.title} animation="fadeInUp">RESTAURANT TIBÉTAIN</Animation>
+        <Animation style={{ display: "flex",margin:"70px 0px" }} animation="fadeInUp">
           <Image
             src="/assets/localisation.png"
             alt="localisation tibet"
@@ -34,8 +35,8 @@ function Welcome() {
             <h3 className={styles.adresse}>55 rue de Mirail</h3>
             <h3 className={styles.ville}>33000 Beardeaux France</h3>
           </div>
-        </div>
-        <div className={styles.button}>VOIR NOTRE CARTE</div>
+        </Animation>
+        <Animation className={styles.button} animation="fadeInRight">VOIR NOTRE CARTE</Animation>
       </div>
       <div className={styles.imageContainer}>
         <Image

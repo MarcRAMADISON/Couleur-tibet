@@ -1,7 +1,7 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
-import { useEffect } from 'react';
+import style from './map.module.css'
 
 delete L.Icon.Default.prototype._getIconUrl;
 
@@ -13,7 +13,7 @@ L.Icon.Default.mergeOptions({
 
 export default function Map() {
   return (
-    <MapContainer scrollWheelZoom={false} center={[44.832604625619766, -0.5707980875194086]} zoom={20} style={{ height: '600px', width: '100%' }}>
+    <MapContainer scrollWheelZoom={false} center={[44.832604625619766, -0.5707980875194086]} zoom={20} className={style.container} >
       <TileLayer
         attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a>'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

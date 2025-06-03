@@ -1,23 +1,4 @@
-.carouselContainer {
-    position: relative;
-    width: 100%;
-    max-width: 900px; /* un peu plus large pour 3 cartes */
-    overflow: hidden;
-    margin: auto;
-  }
-  
-  .carouselWrapper {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%;
-  }
-  
-  .carouselSlide {
-    min-width: 33.3333%; /* 3 cartes visibles */
-    box-sizing: border-box;
-    user-select: none;
-    padding: 0 10px; /* un peu d'espace entre les cartes */
-  }
+
   
   .leftArrow,
   .rightArrow {
@@ -46,5 +27,21 @@
   .leftArrow:hover,
   .rightArrow:hover {
     background: rgba(0, 0, 0, 0.8);
+  }
+
+  .carouselContainer {
+    overflow: hidden;
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .carouselWrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carouselSlide {
+    flex-shrink: 0;
   }
   

@@ -9,9 +9,37 @@
     background-color: #fff;
     border-radius: 10px;
     cursor:pointer;
+    position: relative;
 }
+.overlay{
+    width:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background-color: rgba(255,255,255,0.9);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:0;
+    opacity:0;
+    transition: all 0.5s ease-in;
+}
+.container:hover .overlay{
+    height:100%;
+    opacity:1;
+}
+
+.container:hover{
+    transform: scale(1.05);
+}
+
 .imageContainer{
     width:90%;
     height:200px;
     position:relative;
+}
+.overlayText{
+    color:#303030;
+    font-size: 1.2rem;
 }
