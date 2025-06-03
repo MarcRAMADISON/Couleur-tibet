@@ -27,7 +27,9 @@ export default function Modal({ isOpen, onClose, children }) {
             position: "relative",
             display:"flex",
             flexDirection:"column",
-            alignItems:"center"
+            alignItems:"center",
+            maxHeight:'90vh',
+            overflowY:"scroll"
 
           }}
           onClick={(e) => e.stopPropagation()} 
