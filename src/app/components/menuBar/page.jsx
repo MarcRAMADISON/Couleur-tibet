@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import style from "./menuBar.module.css";
 import { useState } from "react";
@@ -136,7 +138,7 @@ function MenuBar({ setShowBasket, paniers }) {
               left: "-50px",
             }}
           >
-            {paniers.length}
+            {paniers?.length? paniers?.length : 0}
           </div>
         </div>
       </div>

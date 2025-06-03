@@ -5,7 +5,7 @@ import style from "./contact.module.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
 
-const Map = dynamic(() => import("../map/page"), { ssr: false });
+const Map = dynamic(() => import("../map/map"), { ssr: false });
 
 function Contact() {
   return (

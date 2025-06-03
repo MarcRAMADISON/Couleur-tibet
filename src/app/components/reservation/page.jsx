@@ -1,3 +1,5 @@
+'use client'
+
 import Modal from "../modal/page";
 import style from "./reservation.module.css";
 import { useState } from "react";

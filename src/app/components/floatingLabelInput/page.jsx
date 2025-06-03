@@ -1,4 +1,5 @@
-import { useState } from "react";
+'use client'
+
 
 export default function FloatingLabelInput({ id, placeholder, type = "text",value,handleChange, name }) {
 

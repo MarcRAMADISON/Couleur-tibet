@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useMemo } from "react";
 import Modal from "../modal/page";
 import style from "./panier.module.css";
@@ -10,7 +12,7 @@ function Panier({ open, setOpen, data, setData }) {
   const [openCommande, setOpenCommande] = useState(false);
 
   const calculatedTotal = useMemo(() => {
-    return data.reduce((total, d) => {
+    return data?.reduce((total, d) => {
       return d?.nombre ? d?.nombre * d.price + total : d.price + total;
     }, 0);
   }, [data]);
@@ -44,7 +46,7 @@ function Panier({ open, setOpen, data, setData }) {
       {!openCommande ? (
         <>
           <h2 className={style.titleCard}>Panier</h2>
-          {data.length ? (
+          {data?.length ? (
             <>
               {_.sortBy(data, "name").map((d, index) => {
                 return (

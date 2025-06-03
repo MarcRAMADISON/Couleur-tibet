@@ -7,11 +7,11 @@ import Image from "next/image";
 const Carousel = ({ children }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [visibleCount, setVisibleCount] = useState(3);
-  const length = children.length;
+  const length = children?.length;
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth <= 440) {
+      if (window?.innerWidth <= 440) {
         setVisibleCount(1);
       } else {
         setVisibleCount(3);
@@ -19,9 +19,9 @@ const Carousel = ({ children }) => {
     };
 
     handleResize();
-    window.addEventListener("resize", handleResize);
+    window?.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window?.removeEventListener("resize", handleResize);
   }, []);
 
   const maxIndex = Math.max(length - visibleCount, 0);
@@ -38,7 +38,6 @@ const Carousel = ({ children }) => {
     return null;
   }
 
-  console.log('values carousel',)
 
   return (
     <div className={styles.carouselContainer}>
